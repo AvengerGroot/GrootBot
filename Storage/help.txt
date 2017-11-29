@@ -4,7 +4,7 @@
 help - Will give the current command list
 ping - Pong?
 guilds - shows you in how many servers am I am.
-Shows - the bot uptime
+uptime - the bot uptime
 ------------------------------------------------------------
 
 -------------------------[Moderation]-----------------------
