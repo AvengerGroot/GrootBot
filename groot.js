@@ -5,6 +5,15 @@ const prefix = "g!"
 
 client.on("ready", () => {
 	console.log("online");
+	const snekfetch = require('snekfetch');
+const key = process.env.DBL_KEY;
+
+snekfetch.post(`https://discordbots.org/api/bots/${bot.user.id}/stats`)
+    .set('Authorization', key)
+    .send({ server_count: bot.guilds.size, shard_count: bot.shard.count, shard_id: bot.shard.id })
+    .then(() => console.log(`Posted to dbl.`))
+    .catch((e) => e);
+	
 	client.user.setPresence({ game: { name: `I am Groot | g!help`, type: 0} });
 });
 
