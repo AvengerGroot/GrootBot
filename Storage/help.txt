@@ -20,6 +20,7 @@ botinfo - Will give you information about me
 avatar [mention] - Will show you Avatar of that person
 server - Gives some info about server
 weather <<location>> - Get weather information
+icon - shows you the server icon
 ------------------------------------------------------------
 
 
