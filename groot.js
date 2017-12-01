@@ -10,7 +10,7 @@ const key = process.env.DBL_KEY;
 
 snekfetch.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
     .set('Authorization', key)
-    .send({ server_count: client.guilds.size, shard_count: client.shard.count, shard_id: client.shard.id })
+    .send({ server_count: client.guilds.size, shard_count: client.guilds.size, shard_id: client.shard.id })
     .then(() => console.log(`Posted to dbl.`))
     .catch((e) => e);
 	
