@@ -5,7 +5,7 @@ help - Will give the current command list
 ping - Pong?
 guilds - shows you in how many servers am I am.
 uptime - the bot uptime
-Posts a GitHub Repository for Groot
+github - Posts a GitHub Repository for Groot
 ------------------------------------------------------------
 
 -------------------------[Moderation]-----------------------
