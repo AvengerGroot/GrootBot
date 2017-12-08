@@ -7,7 +7,13 @@
 <h4 align="center">Groot is Simple multi-purpose Discord bot (open-source).</h4>
   <p align="center">
       <a href="https://discordbots.org/bot/369291505497669642">
+  <img src="https://discordbots.org/api/widget/status/369291505497669642.png" alt="Discord Bots" />
+</a>
+      <a href="https://discordbots.org/bot/369291505497669642">
   <img src="https://discordbots.org/api/widget/servers/369291505497669642.png" alt="Discord Bots" />
+</a>
+    <a href="https://discordbots.org/bot/369291505497669642">
+  <img src="https://discordbots.org/api/widget/owner/369291505497669642.png" alt="Discord Bots" />
 </a>
   
 -------------------
