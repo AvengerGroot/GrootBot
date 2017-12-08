@@ -20,5 +20,5 @@
 
 ## Support
 
-If you need any help with the bot or you think you have found a bug please join our [official Discord server](https://discord.gg/ecYmea4) and report it there
+If you need any help with the bot or you think you have found a bug please join in [Discord server](https://discord.gg/ecYmea4) and report it there
  
