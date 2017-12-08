@@ -23,4 +23,3 @@
 If you need any help with the bot or you think you have found a bug please join in [Discord server](https://discord.gg/ecYmea4) and report it there
  
 ### [Invite Me on your server!.](https://discordapp.com/oauth2/authorize?client_id=369291505497669642&scope=bot&permissions=2146958591)
-<iframe src="https://discordapp.com/widget?id=384816456589901825&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
