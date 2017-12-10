@@ -6,6 +6,7 @@ ping - Pong?
 guilds - shows you in how many servers am I am.
 uptime - the bot uptime
 github - Posts a GitHub Repository for Groot
+report - If something went wrong with groot. report here
 ------------------------------------------------------------
 
 -------------------------[Moderation]-----------------------
