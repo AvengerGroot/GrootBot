@@ -19,6 +19,7 @@ exports.run = (client, message, args) => {
 .addField("Region", message.guild.region,true)
 .addField(`Created`, '\n '+ CreatedAt(message) + ' days ago' + '\n', true)
 .addField("Verfication level", message.guild.verificationLevel, true)
+.addField("Server emojis:", message.guild.emojis.map(e=>e.toString()).join(" "))
 .setThumbnail(message.guild.iconURL)
 .setTimestamp()
 .setFooter(`Requested By ${message.author.username}`, message.author.avatarURL)
