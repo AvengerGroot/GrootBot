@@ -8,10 +8,27 @@ function CreatedAt(message) {
 }
 
 
-
 exports.run = (client, message, args) => {
+const emojis = message.guild.emojis.map(e=>e.toString()).join(" ")
+if (!emojis) {
   let embed = new Discord.RichEmbed()
-	.setColor("#B15E3A")
+  .setColor("#B15E3A")
+  .setAuthor(`Server info`, message.guild.iconURL)
+  .addField("Server name", `${message.guild.name}`,true)
+  .addField("Members",`${message.guild.memberCount} `,true)
+  .addField("Owner",`${message.guild.owner}`,true)
+  .addField("Region", message.guild.region,true)
+  .addField(`Created`, '\n '+ CreatedAt(message) + ' days ago' + '\n', true)
+  .addField("Verfication level", message.guild.verificationLevel, true)
+  .addField("Server emojis:", "This server does not have Emojis")
+  .setThumbnail(message.guild.iconURL)
+  .setTimestamp()
+  .setFooter(`Requested By ${message.author.username}`, message.author.avatarURL)
+   message.channel.send({ embed })
+return }
+
+  let embed = new Discord.RichEmbed()
+.setColor("#B15E3A")
 	.setAuthor(`Server info`, message.guild.iconURL)
 	.addField("Server name", `${message.guild.name}`,true)
 .addField("Members",`${message.guild.memberCount} `,true)
@@ -19,9 +36,10 @@ exports.run = (client, message, args) => {
 .addField("Region", message.guild.region,true)
 .addField(`Created`, '\n '+ CreatedAt(message) + ' days ago' + '\n', true)
 .addField("Verfication level", message.guild.verificationLevel, true)
-.addField("Server emojis:", message.guild.emojis.map(e=>e.toString()).join(" "))
+.addField("Server emojis:", emojis)
 .setThumbnail(message.guild.iconURL)
 .setTimestamp()
 .setFooter(`Requested By ${message.author.username}`, message.author.avatarURL)
 	 message.channel.send({ embed })
+
 }
