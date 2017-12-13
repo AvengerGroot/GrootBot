@@ -1,6 +1,6 @@
-var google = require('googleapis');
+//var google = require('googleapis');
 
-module.exports = {
+//module.exports = {
     getVideo: function (query) {
         return new Promise(function (resolve, reject) {
             var service = google.youtube('v3');
