@@ -58,4 +58,3 @@ exports.giphy = {
 	}
 }
 }
-
