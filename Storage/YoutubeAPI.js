@@ -5,7 +5,7 @@
 //         return new Promise(function (resolve, reject) {
 //             var service = google.youtube('v3');
 //             service.search.list({
-//                 auth: `	AIzaSyAwCiZ_BYxYPjyVyaRsU-16NGWfHq5BBSE`,
+//                 auth: '-',
 //                 part: 'id,snippet',
 //                 type: `video`,
 //                 q: query,
