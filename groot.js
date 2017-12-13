@@ -1,7 +1,6 @@
 const Discord = require("discord.js");     const client = new Discord.Client();
 const fs = require("fs");                  const prefix = "g!"
 const YTDL = require('ytdl-core');         const ytapi = require('./Storage/YoutubeAPI.js');
-const google = require("googleapis");
 client.on("ready", () => {
 	console.log("online");
 	const snekfetch = require('snekfetch');
