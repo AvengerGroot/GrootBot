@@ -13,7 +13,7 @@ snekfetch.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
     .then(() => console.log(`Posted to dbl.`))
     .catch((e) => e);
 
-	client.user.setPresence({ game: { name: `I am Groot | g!help`, type: 0} }); node_modules
+	client.user.setPresence({ game: { name: `I am Groot | g!help`, type: 0} });
 });
 
 fs.readdir("./events/", (err, files) => {
