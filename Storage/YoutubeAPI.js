@@ -1,7 +1,7 @@
- *
- * @module googleapis
- * @type {GoogleApis}
- */
+
+@module googleapis
+@type {GoogleApis}
+ 
 export = new GoogleApis();
 var google = require('googleapis');
 
