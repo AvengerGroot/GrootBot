@@ -53,10 +53,10 @@ exports.giphy = {
 		var tags = suffix.split(" ");
 		get_gif(tags, function(id) {
 		if (typeof id !== "undefined") {
-			msg.channel.sendMessage( "http://media.giphy.com/media/" + id + "/giphy.gif [Tags: " + (tags ? tags : "Random GIF") + "]");
+			message.channel.sendMessage( "http://media.giphy.com/media/" + id + "/giphy.gif [Tags: " + (tags ? tags : "Random GIF") + "]");
 		}
 		else {
-			msg.channel.sendMessage( "Invalid tags, try something different. [Tags: " + (tags ? tags : "Random GIF") + "]");
+			message.channel.sendMessage( "Invalid tags, try something different. [Tags: " + (tags ? tags : "Random GIF") + "]");
 		}
 		});
 	}
