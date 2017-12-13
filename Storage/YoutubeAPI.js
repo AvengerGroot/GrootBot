@@ -1,8 +1,3 @@
-
-@module googleapis
-@type {GoogleApis}
- 
-export = new GoogleApis();
 var google = require('googleapis');
 
 module.exports = {
