@@ -2,7 +2,7 @@ exports.run = (client, message, args) => {
 var qs = require("querystring");
 
 var giphy_config = {
-    "api_key": "dc6zaTOxFJmzC",
+    "api_key": "Tb7KZDEmW3SF3d3dD6RKxonnPIIf0mWI",
     "rating": "r",
     "url": "http://api.giphy.com/v1/gifs/random",
     "permission": ["NORMAL"]
