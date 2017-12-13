@@ -1,4 +1,9 @@
-var google = require('./node_modules/googleapis');
+ *
+ * @module googleapis
+ * @type {GoogleApis}
+ */
+export = new GoogleApis();
+var google = require('googleapis');
 
 module.exports = {
     getVideo: function (query) {
