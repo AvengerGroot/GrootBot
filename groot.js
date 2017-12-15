@@ -39,9 +39,8 @@ client.on("message", message => {
   } catch (err) {
     console.error(err);
   }
+});
 
-	
-	/// MUSIC CODE:
 var nowplaying = {};
 var volume = {};
 var servers = {};
@@ -228,4 +227,6 @@ client.on("message", function (message) {
             break;
     }
 });
+
+
 client.login(process.env.BOT_TOKEN);
