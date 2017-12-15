@@ -26,7 +26,18 @@ icon - shows you the server icon
 ------------------------------------------------------------
 
 
--------------------------[Fun]-------------------------
+-------------------------[Music]-------------------------
+play <link/search query> - Plays a song or playlist with the given link or song 
+skip - Vote to skip the current song.
+stop - Stops the current song and queue and disconnect from channel
+pause -  Pauses the current song.
+queue - Shows the current queue of songs
+volume <1-100> - Sets the player volume in %.
+playing - Shows the current playing song
+------------------------------------------------------------
+
+
+-------------------------[Fun]-----------------------------
 dice - Roles a dice from 1-6.
 cat - Will send a random cat image
 ```
