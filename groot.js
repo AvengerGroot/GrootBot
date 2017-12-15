@@ -137,12 +137,9 @@ client.on("message", function (message) {
                 }
             });
             break;
-        case "skip":
-message.channel.send("skipped :track_next: ")
-	var server = servers[message.guild.id];
-	if (server.dispatcher) server.dispatcher.end();
-
-            break;
+   
+ 
+		    
         case "stop":
             var server = servers[message.guild.id];
             if (message.guild.voiceConnection) {
@@ -171,6 +168,15 @@ message.channel.send("skipped :track_next: ")
                 message.channel.send(embed);
             }
             break;
+		    
+		    
+    case "skip":
+message.channel.send("skipped :track_next: ")
+       var server = servers[message.guild.id];
+
+      if (server.dispatcher) server.dispatcher.end();
+	 break;
+		   
         case "queue":
             var iconurl = client.user.avatarURL;
             if (nowplaying[message.guild.id]) {
