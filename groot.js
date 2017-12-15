@@ -138,7 +138,6 @@ client.on("message", function (message) {
             break;
    
 				case "skip":
-		    setTimeout(() => play(), 4000)
 message.channel.send("skipped :track_next: ")
 					var server = servers[message.guild.id];
 					if (server.dispatcher) server.dispatcher.end();
@@ -238,6 +237,8 @@ message.channel.send("I'm out! :v:")
         default:
             break;
     }
+	setTimeout(() => play(), 4000);
+	setTimeout(() => skip(), 4000);
 });
 
 
