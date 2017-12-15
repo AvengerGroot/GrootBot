@@ -5,7 +5,7 @@ module.exports = {
         return new Promise(function (resolve, reject) {
             var service = google.youtube('v3');
             service.search.list({
-               auth: '-',
+               auth: process.env.AUTH_KEY,
                  part: 'id,snippet',
                  type: `video`,
                 q: query,
