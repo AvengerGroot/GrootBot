@@ -138,10 +138,10 @@ client.on("message", function (message) {
             });
             break;
         case "skip":
-            var server = servers[message.guild.id];
-            if (server.dispatcher) {
-                server.dispatcher.end();
-            }
+message.channel.send("skipped :track_next: ")
+					var server = servers[message.guild.id];
+					if (server.dispatcher) server.dispatcher.end();
+
             break;
         case "stop":
             var server = servers[message.guild.id];
