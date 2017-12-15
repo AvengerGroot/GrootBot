@@ -13,7 +13,7 @@ snekfetch.post(`https://discordbots.org/api/bots/${client.user.id}/stats`)
     .then(() => console.log(`Posted to dbl.`))
     .catch((e) => e);
 
-	client.user.setPresence({ game: { name: `I am Groot | g!help`, type: 0} });
+	client.user.setPresence({ game: { name: `Music update| g!help`, type: 0} });
 });
 
 fs.readdir("./events/", (err, files) => {
@@ -58,11 +58,11 @@ function play(connection, message) {
         video.title)
         .setThumbnail(video.thumbnail)
 				 .setFooter(`Requested by ${message.author.username}`, message.author.avatarURL)
-    message.channel.send(embed); // This sends a message of the current music playing
+    message.channel.send(embed); 
 
-    server.dispatcher = connection.playStream(YTDL(video.url, { filter: "audioonly" })); // This will stream only the audio part of the video.
-    if (volume[message.guild.id]) // This checks if the user have set a volume
-        server.dispatcher.setVolume(volume[message.guild.id]); // This sets the volume of the stream
+    server.dispatcher = connection.playStream(YTDL(video.url, { filter: "audioonly" })); 
+    if (volume[message.guild.id]) 
+        server.dispatcher.setVolume(volume[message.guild.id]);
 
     server.dispatcher.on("end", function () {
         nowplaying[message.guild.id] = null;
