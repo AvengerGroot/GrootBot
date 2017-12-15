@@ -237,8 +237,6 @@ message.channel.send("I'm out! :v:")
         default:
             break;
     }
-	setTimeout(() => play(), 4000);
-	setTimeout(() => skip(), 4000);
 });
 
 
