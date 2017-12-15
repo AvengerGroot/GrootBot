@@ -38,9 +38,8 @@ client.on("message", message => {
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
-  }
-
-	/// MUSIC CODE:
+  });
+/// MUSIC CODE:
 var nowplaying = {};
 var volume = {};
 var servers = {};
@@ -226,5 +225,5 @@ client.on("message", function (message) {
         default:
             break;
     }
-})
+});
 client.login(process.env.BOT_TOKEN);
