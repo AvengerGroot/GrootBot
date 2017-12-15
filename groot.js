@@ -38,8 +38,10 @@ client.on("message", message => {
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
-  });
-/// MUSIC CODE:
+  }
+
+	
+	/// MUSIC CODE:
 var nowplaying = {};
 var volume = {};
 var servers = {};
