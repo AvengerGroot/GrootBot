@@ -226,7 +226,5 @@ client.on("message", function (message) {
         default:
             break;
     }
-});
-
-
+})
 client.login(process.env.BOT_TOKEN);
