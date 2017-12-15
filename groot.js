@@ -138,7 +138,7 @@ client.on("message", function (message) {
             break;
    
 				case "skip":
-		    setTimeout(() => functionName(), 4000)
+		    setTimeout(() => play(), 4000)
 message.channel.send("skipped :track_next: ")
 					var server = servers[message.guild.id];
 					if (server.dispatcher) server.dispatcher.end();
