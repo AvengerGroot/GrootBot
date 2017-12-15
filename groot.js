@@ -69,7 +69,6 @@ function play(connection, message) {
         if (server.queue.length > 0)
             play(connection, message);
         else {
-            connection.disconnect();
             server.dispatcher = null;
         }
     });
@@ -144,6 +143,14 @@ message.channel.send("skipped :track_next: ")
 					if (server.dispatcher) server.dispatcher.end();
 					  break;
 break;
+		    
+	case "leave":
+	var server = servers[message.guild.id];
+message.channel.send("I'm out! :v:")
+	if (message.guild.voiceConnection) {
+	message.guild.voiceConnection.disconnect();
+	}
+	break;
 		    
         case "stop":
             var server = servers[message.guild.id];
