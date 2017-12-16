@@ -136,11 +136,12 @@ client.on("message", function (message) {
                 }
             });
             break;
-   
-				case "skip":
-message.channel.send("skipped :track_next: ")
+		    		case "skip":
+				setTimeout(function() {
+					message.channel.send("skipped :track_next: ")
 					var server = servers[message.guild.id];
 					if (server.dispatcher) server.dispatcher.end();
+				}, 4000);
 					  break;
 break;
 		    
