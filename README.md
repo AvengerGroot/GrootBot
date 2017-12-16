@@ -4,7 +4,7 @@
     Groot
   <br>
  </h1>
-<h4 align="center">Groot is Simple multi-purpose Discord bot (open-source).</h4>
+<h4 align="center">Groot is Simple multi-purpose Discord bot with moderation/fun/music commands.</h4>
   <p align="center">
       <a href="https://discordbots.org/bot/369291505497669642">
   <img src="https://discordbots.org/api/widget/status/369291505497669642.png" alt="Discord Bots" />
