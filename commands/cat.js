@@ -12,7 +12,7 @@ module.exports.run = async (client, message, args) => {
                 icon_url: client.user.avatarURL,
                 text: "© Groot | Random Cat"
               },
-              color: 654456
+            
             }
         });
     }
