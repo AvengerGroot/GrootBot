@@ -5,7 +5,6 @@ exports.run = (client, message, args) => {
   let dude = moment.duration(client.uptime/1000, "seconds").format("d [Days], h [Hours], m [Minutes], s [Seconds]");
   let embed = new Discord.RichEmbed()
       .setThumbnail(`${client.user.avatarURL}`)
-      .setColor("#B15E3A")
    .addField(":pager:Servers", ` ${message.client.guilds.size}`,true)
   .addField(":couple:Users", `${message.client.users.size}`,true)
    .addField(":book:Library", "Discord.js (`11.2.1`)", true )
