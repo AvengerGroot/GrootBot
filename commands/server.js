@@ -12,7 +12,6 @@ exports.run = (client, message, args) => {
 const emojis = message.guild.emojis.map(e=>e.toString()).join(" ")
 if (!emojis) {
   let embed = new Discord.RichEmbed()
-  .setColor("#B15E3A")
   .setAuthor(`Server info`, message.guild.iconURL)
   .addField("Server name", `${message.guild.name}`,true)
   .addField("Members",`${message.guild.memberCount} `,true)
@@ -28,7 +27,6 @@ if (!emojis) {
 return }
 
   let embed = new Discord.RichEmbed()
-.setColor("#B15E3A")
 	.setAuthor(`Server info`, message.guild.iconURL)
 	.addField("Server name", `${message.guild.name}`,true)
 .addField("Members",`${message.guild.memberCount} `,true)
