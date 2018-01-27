@@ -9,7 +9,6 @@ exports.run = (client, message, args) => {
 		}
 	var embed = new Discord.RichEmbed()
  .setAuthor(`${message.mentions.members.first().user.username} has this avatar!`)
- .setColor("#B15E3A")
  .setFooter(`Requested by ${message.author.username}`, message.author.avatarURL)
 	.setImage(output)
 	.setTimestamp();
