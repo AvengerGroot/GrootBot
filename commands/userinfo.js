@@ -28,7 +28,6 @@ exports.run = (client, message, args) => {
   const embed = new Discord.RichEmbed()
  	.setAuthor(`${message.author.username}#${message.author.discriminator}`, message.author.avatarURL)
  	     .setThumbnail(message.author.avatarURL)
- 	     .setColor("#B15E3A")
  		.addField(`Joined Discord`, '\n '+ DiscordD(message) + ' days ago' + '\n', true)
  		.addField(`Joined the Server`, '\n '+ GuildD(message) + ' days ago' + '\n', true)
     .addField("Name",`${message.author.username}`, true)
