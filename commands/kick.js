@@ -21,7 +21,6 @@ exports.run = (client, message, args) => {
             .addField("User",`${member.user.tag}`,true )
             .addField("Kick by:", `${message.author.tag}`,true)
             .addField("Reason", `${reason}`)
-            .setColor("#2ECC71")
             .setImage("https://i.gyazo.com/253b12b0c750b429cbbcf65359881c43.gif")
               .setTimestamp();
             message.channel.send({ embed })
