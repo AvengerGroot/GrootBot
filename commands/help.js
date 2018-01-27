@@ -4,7 +4,6 @@ var commandsList = fs.readFileSync('Storage/help.txt', 'utf8');
 exports.run = (client, message, args) => {
   const embed = new Discord.RichEmbed()
   .setDescription(`${message.author.username} I've sent you a DM with all my commands! :mailbox_with_mail: `)
-  .setColor("#77DD7E")
   message.channel.send({embed});
    message.author.send(commandsList)
 }
