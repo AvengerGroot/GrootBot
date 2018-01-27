@@ -15,7 +15,6 @@ exports.run = (client, message, args) => {
   			const fetched = await message.channel.fetchMessages({limit: args[0]});
   			console.log(fetched.size + ' messages found, deleting...');
   		 const embed = new Discord.RichEmbed()
-  			 .setColor("#77DD7E")
   			 .addField("I have deleted", `${fetched.size} messages!`,true)
   			 .addField("Channel:", `${message.channel.name}`,true)
   			 message.channel.send({embed});
