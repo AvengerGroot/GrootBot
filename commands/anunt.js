@@ -6,7 +6,6 @@ exports.run = (client, message, args) => {
  		   if (text.length < 1) return message.channel.send("Can not announce nothing");
 
  		   const embed = new Discord.RichEmbed()
- 		   .setColor("#917357")
  		   .setTitle("Important Announcement:")
  		   .setDescription(text)
  		   .setTimestamp();
