@@ -53,7 +53,6 @@ function play(connection, message) {
     var iconurl = client.user.avatarURL;
     var embed = new Discord.RichEmbed()
         .setAuthor("Music", "https://cdn3.iconfinder.com/data/icons/ultimate-social/150/41_itunes-512.png")
-        .setColor("#F0536C")
         .setDescription("**Now Playing:**\n" +
         video.title)
         .setThumbnail(video.thumbnail)
@@ -87,7 +86,6 @@ client.on("message", function (message) {
             if (!args[1]) {
                 var embed = new Discord.RichEmbed()
                     .setAuthor("Music", iconurl)
-                    .setColor([255, 0, 0])
                     .setDescription(`**Usage:** ${prefix}play <link/search query>`)
                 message.channel.send(embed);
                 return;
@@ -116,8 +114,7 @@ client.on("message", function (message) {
                 if (server.dispatcher) {
                     if (server.queue.length > 0) {
                         var embed = new Discord.RichEmbed()
-                            .setAuthor("Music", "https://cdn3.iconfinder.com/data/icons/ultimate-social/150/41_itunes-512.png")
-                            .setColor("#F0536C")
+                            .setAuthor("Music", "https://cdn3.iconfinder.com/data/icons/ultimate-social/150/41_itunes-512.png") 
                             .setDescription("**Added to queue:**\n" +
                             video.title)
                             .setThumbnail(video.thumbnail)
@@ -166,7 +163,6 @@ message.channel.send("I'm out! :v:")
                 var video = nowplaying[message.guild.id];
                 var embed = new Discord.RichEmbed()
                     .setAuthor("Music", "https://cdn3.iconfinder.com/data/icons/ultimate-social/150/41_itunes-512.png")
-                    .setColor("#F0536C")
                     .setDescription("**Now Playing:**\n" +
                     video.title)
                     .setThumbnail(video.thumbnail)
@@ -200,14 +196,12 @@ message.channel.send("I'm out! :v:")
                 }
                 var embed = new Discord.RichEmbed()
                     .setAuthor("Music", iconurl)
-                    .setColor([0, 255, 0])
                     .setDescription(desc)
                 message.channel.send(embed);
             }
             else {
                 var embed = new Discord.RichEmbed()
                     .setAuthor("Music", iconurl)
-                    .setColor([0, 255, 0])
                     .setDescription("No music is playing.")
                 message.channel.send(embed);
             }
@@ -217,7 +211,6 @@ message.channel.send("I'm out! :v:")
             if (!args[1]) {
                 var embed = new Discord.RichEmbed()
                     .setAuthor("Music", iconurl)
-                    .setColor([255, 0, 0])
                     .setDescription(`**Usage:** ${PREFIX}volume <volume>`)
                 message.channel.send(embed);
                 return;
