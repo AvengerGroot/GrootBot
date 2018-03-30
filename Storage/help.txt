@@ -14,6 +14,7 @@ kick <user> <<reason>> - Kicks a user with a reason
 say - [text] - Will make the bot say something
 anunt - [text] - make an announcement and tag everyone
 clean <number> - Deletes messages
+ban <user> <<reason>> - ban a user with a reason from server.
 ------------------------------------------------------------
 
 -------------------------[UserUtil]-------------------------
@@ -23,17 +24,6 @@ avatar [mention] - Will show you Avatar of that person
 server - Gives some info about server
 weather <<location>> - Get weather information
 icon - shows you the server icon
-------------------------------------------------------------
-
-
--------------------------[Music]-------------------------
-play <link/search query> - Plays a song or playlist with the given link or song 
-skip - Vote to skip the current song.
-stop - Stops the current song and queue and disconnect from channel
-pause -  Pauses the current song.
-queue - Shows the current queue of songs
-volume <1-100> - Sets the player volume in %.
-playing - Shows the current playing song
 ------------------------------------------------------------
 
 
